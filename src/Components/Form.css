@@ -1,0 +1,87 @@
+.main-form-page {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 8px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-field {
+    width: 90%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* .img-form {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: auto;
+} */
+
+.form-control-main-page {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none !important;
+    border-bottom: 1px solid #FF851B !important;
+    outline: none;
+    box-shadow: none !important;
+    color: #635A5A;
+}
+
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.submit-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formbutton {
+    background-color: #FF631A !important;
+    color: white !important;
+    font-weight: 500 !important;
+    border: none  !important;
+    border-radius: 6px  !important;
+    font-size: 16.5px  !important;
+    transition: all 0.3s ease  !important;
+    width: 50%;
+}
+
+.formbutton:hover {
+    color: #FF851B !important;
+    border: 1px solid #FF851B !important;
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+    .main-form-page {
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main-form-page {
+        max-width: 330px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main-form-page {
+        max-width: 300px;
+    }
+}

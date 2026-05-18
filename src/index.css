@@ -1,0 +1,213 @@
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.hed1 {
+  font-size: 40px ;
+  font-weight: 700 ; /* Adjust as needed */
+  color: #5e5e5e;
+}
+.hed2{
+  font-size: 30px ;
+  font-weight: bold ;
+  color: #474747;
+}
+.hed1:hover {
+  /* text-shadow: 0px 0px 2px #fff, 0px 0px 2px #FE5A0E; */
+  cursor: pointer;
+}
+.para {
+  font-size: 15px ;
+  font-weight: 400 ;
+  color: #3d3d3d ;
+}
+
+.hed4 {
+  font-size: 18px ;
+  font-weight: 550 ;
+  color: #474747;
+}
+
+.hed3 {
+  font-size: 20px ;
+  font-weight: 550 ;
+  color: #474747 ; /* Corrected hex code */
+}
+
+.footer-heading {
+  font-size: 30px ; 
+  font-weight: 600 ; /* Adjusted to a valid font-weight value */
+}
+
+@media screen  and (max-width:768px){
+  .hed1{
+    font-size:22px ;
+  font-weight:bold ; /* Adjust as needed */
+  color: #474747;
+  }
+  .hed2{
+    font-size:19px ;
+  font-weight:500; /* Adjust as needed */
+  color: #474747;
+  }
+  .hed3{
+    font-size:18px ;
+  font-weight: 500 ; /* Adjust as needed */
+  color: #474747;
+  }
+  .hed4{
+    font-size:16px ;
+  font-weight: 400 ; /* Adjust as needed */
+  color: #474747;
+  }
+  .para{
+    font-size:13px ;
+  font-weight: 400 ; /* Adjust as needed */
+  color: #474747;
+  }
+  
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+.o2bo-root {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  max-width: 1920px;    /* 1360px ki jagah 1920px karo */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ── SHARED BUTTONS ── */
+.btn-primary {
+  background: #f97316;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: #ea6c0a; transform: translateY(-1px); }
+
+.btn-white {
+  background: #fff;
+  color: #f97316;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  white-space: nowrap;
+  transition: transform 0.15s;
+}
+.btn-white:hover { transform: translateY(-1px); }
+
+.mobile-sticky-book-call {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #f97316;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(194, 65, 12, 0.34);
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  animation: stickyBookCallPulse 1.8s ease-out infinite;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.mobile-sticky-book-call:hover {
+  background: #ea6c0a;
+  transform: translateY(-1px);
+}
+
+.mobile-sticky-book-call:active {
+  transform: translateY(1px);
+}
+
+@keyframes stickyBookCallPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(194, 65, 12, 0.5), 0 10px 24px rgba(194, 65, 12, 0.34);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(194, 65, 12, 0), 0 10px 24px rgba(194, 65, 12, 0.34);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(194, 65, 12, 0), 0 10px 24px rgba(194, 65, 12, 0.34);
+  }
+}
+
+/* ── SHARED MOCKUP DOTS ── */
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot.r { background: #f87171; }
+.dot.y { background: #fbbf24; }
+.dot.g { background: #34d399; }
+
+/* ── SHARED PAIN LIST ── */
+.pain-list { list-style: none; }
+.pain-list li {
+  font-size: 14px;
+  color: #444;
+  padding: 5px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.pain-list li::before { content: '•'; color: #f97316; font-size: 18px; line-height: 1.2; }
+
+/* ── RESPONSIVE HELPERS ── */
+@media (max-width: 900px) {
+  .two-col {
+    flex-direction: column !important;
+    padding: 40px 24px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .mobile-sticky-book-call {
+    right: 16px;
+    bottom: 18px;
+    min-height: 32px;
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+}
+.phone-link {
+  color: #696984;
+  text-decoration: none;
+}
+
+.phone-link:hover {
+  color: blue;
+}

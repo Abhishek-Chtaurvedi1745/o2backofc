@@ -1,0 +1,127 @@
+.solution-section {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  min-height: 503px;
+  background: #fff4e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.solution-layout {
+  width: 1171.86px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  box-sizing: border-box;
+}
+
+.solution-content {
+  flex: 0 0 430px;
+  width: 430px;
+  box-sizing: border-box;
+}
+
+.solution-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #2F327D;
+  line-height: 1.35;
+  margin: 0 0 18px;
+}
+
+.solution-content h2 span { color: #F48C06; }
+
+.solution-content .pain-list {
+  max-width: 410px;
+}
+
+.solution-content .pain-list li {
+  color: #34436c;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.solution-content .pain-list li::before {
+  color: #000;
+}
+
+.solution-mockup-image {
+  width: 571px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .solution-section {
+    padding: 0 24px;
+  }
+  .solution-layout {
+    width: 100%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .solution-section {
+    min-height: auto;
+    padding: 40px 24px;
+  }
+
+  .solution-layout {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .solution-content {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .solution-content h2 {
+    font-size: 24px;
+  }
+
+  .solution-content .pain-list {
+    max-width: 100%;
+  }
+
+  .solution-mockup-image {
+    width: min(100%, 571px);
+    align-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .solution-section {
+    padding: 28px 16px;
+  }
+
+  .solution-content h2 {
+    font-size: 20px;
+  }
+
+  .solution-content .pain-list li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .solution-section {
+    padding: 24px 12px;
+  }
+
+  .solution-content h2 {
+    font-size: 18px;
+  }
+}

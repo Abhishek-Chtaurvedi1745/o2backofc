@@ -1,0 +1,139 @@
+.pain-section {
+  width: 100%;
+  height: auto;
+  min-height: 374.53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.pain-layout {
+  width: 1171.86px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 53px;
+  box-sizing: border-box;
+}
+
+.pain-mockup-image {
+  width: 566.86px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.pain-content {
+  flex: 0 0 500px;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.pain-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #2F327D;
+  line-height: 1.35;
+  margin: 0 0 18px;
+}
+
+.pain-content h2 span { color: #F48C06; }
+
+.pain-content .pain-list {
+  max-width: 430px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pain-content .pain-list li {
+  color: #696984;
+  font-size: 18px;
+  line-height: 1.7;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.pain-content .pain-list li::before {
+  content: "•";
+  color: #696984;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+  .pain-layout {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 900px) {
+  .pain-section {
+    min-height: auto;
+    padding: 40px 24px;
+  }
+
+  .pain-layout {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .pain-mockup-image {
+    width: min(100%, 571px);
+    height: auto;
+    align-self: center;
+  }
+
+  .pain-content {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .pain-content h2 {
+    font-size: 24px;
+  }
+
+  .pain-content .pain-list {
+    max-width: 100%;
+  }
+
+  .pain-content .pain-list li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pain-section {
+    padding: 28px 16px;
+  }
+
+  .pain-content h2 {
+    font-size: 20px;
+  }
+
+  .pain-content .pain-list li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .pain-section {
+    padding: 24px 12px;
+  }
+
+  .pain-content h2 {
+    font-size: 18px;
+  }
+
+  .pain-content .pain-list li {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,87 @@
+/* Blog.css */
+
+.col-blog-main-features {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 2px rgba(154, 170, 207, 0.234);
+  }
+  
+  .col-blog-features {
+    background-color: #061B49;
+    padding: 2px 5px;
+  }
+  
+  .bolg-list-data ul {
+    list-style: none;
+  }
+  
+  /* For large screens (desktops) */
+  @media (min-width: 1200px) {
+    .col-blog-main-features {
+      padding: 20px;
+    }
+  }
+  
+  /* For medium screens (iPad Pro and similar tablets) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .col-blog-main-features {
+      padding: 15px;
+    }
+  
+    .blog-post {
+      margin-bottom: 20px;
+    }
+  
+    .bolg-list-data ul li {
+      font-size: 16px;
+    }
+  
+    .star {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  /* For small screens (iPad Mini, iPad Air, and smaller tablets) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    .col-blog-main-features {
+      padding: 10px;
+    }
+  
+    .blog-post {
+      margin-bottom: 15px;
+    }
+  
+    .bolg-list-data ul li {
+      font-size: 14px;
+    }
+  
+    .star {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  
+  /* For extra small screens (phones, Nest Hub, etc.) */
+  @media (max-width: 480px) {
+    .col-blog-main-features {
+      padding: 8px;
+    }
+  
+    .blog-post {
+      margin-bottom: 10px;
+    }
+  
+    .bolg-list-data ul li {
+      font-size: 12px;
+    }
+  
+    .star {
+      width: 12px;
+      height: 12px;
+    }
+  
+    .img-fluid {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  

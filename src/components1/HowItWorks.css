@@ -1,0 +1,139 @@
+.how-section {
+  width: 1440px;
+  max-width: 100%;
+  height: 587px;
+  padding: 0 190px;
+  background: #f4f8fd;
+  display: flex;
+  gap: 72px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.how-mockup {
+  flex: 0 0 600px;
+  width: 600px;
+}
+
+.how-mockup-image {
+  width: 600px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.how-content {
+  flex: 0 0 430px;
+  width: 430px;
+  box-sizing: border-box;
+}
+
+.how-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #2F327D;
+  line-height: 1.2;
+  margin: 0 0 22px;
+}
+
+.how-content h2 span { color: #F48C06; }
+
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.how-step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.step-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.step-text h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #263575;
+  line-height: 1.2;
+  margin: 0 0 4px;
+}
+
+.step-text p {
+  font-size: 16px;
+  color: #667091;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.how-note {
+  font-size: 16px;
+  color: #263575;
+  font-weight: 800;
+  margin: 28px 0 0;
+  line-height: 1.5;
+}
+.how-note .orange {
+  color: #F48C06;
+}
+
+.how-note::first-line {
+  color: #263575;
+}
+
+@media (max-width: 1200px) {
+  .how-section {
+    width: 100%;
+    height: auto;
+    padding: 56px 48px;
+    gap: 48px;
+  }
+
+  .how-mockup {
+    flex: 1 1 52%;
+    width: auto;
+  }
+
+  .how-mockup-image {
+    width: min(100%, 600px);
+  }
+
+  .how-content {
+    flex: 1 1 40%;
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .how-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px;
+  }
+
+  .how-mockup,
+  .how-content {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .how-mockup-image {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,106 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files and build artifacts
+*.log
+*.gz
+*.tar
+*.zip
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore JetBrains IDE directories
+.idea/
+*.iml
+
+# Ignore VS Code directories
+.vscode/
+
+# Ignore npm debugging log
+npm-debug.log*
+
+# Ignore Yarn integrity file
+.yarn-integrity
+
+# Ignore OS-generated files
+Thumbs.db
+ehthumbs.db
+
+# Ignore package-lock.json and yarn.lock files
+package-lock.json
+yarn.lock
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore .env files containing sensitive information
+.env*
+
+# Ignore build and compiled files
+/build/
+/dist/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore Jupyter Notebook specific files
+.ipynb_checkpoints/
+
+# Ignore environment specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore logs and debugging files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignore TypeScript cache
+*.tsbuildinfo
+
+# Ignore ESLint cache
+.eslintcache
+
+# Ignore Prettier cache
+.prettiercache
+
+# Ignore coverage directory
+/coverage/
+
+# Ignore .vs folder for Visual Studio IDE
+.vs/
+
+# Ignore .github folder if it contains workflow files
+.github/workflows/
+
+# Ignore Next.js build output
+.next/
+out/
+
+# Ignore Nest.js build output
+dist/
+
+# Ignore Yarn v2 (Berry) specific files
+.yarn/
+
+# Ignore testing database
+/test-db.sqlite
+
+# Ignore sensitive or environment-specific files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore miscellaneous binaries
+*.bak

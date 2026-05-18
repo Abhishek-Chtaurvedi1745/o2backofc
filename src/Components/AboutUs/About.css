@@ -1,0 +1,32 @@
+.div-about-sec{
+    background-color: #fff;
+    padding: 20px 12px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.div-about-sec img{
+    width: 100px;
+    height: 100px !important;
+}
+.carousel-indicators-services-section-main-page .carousel-indicators li {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.carousel-indicators-services-section-main-page .carousel-control-prev,
+.carousel-indicators-services-section-main-page .carousel-control-next {
+    width: 5%;
+}
+.carousel-indicators-services-section-main-page .carousel-control-prev-icon,
+.carousel-indicators-services-section-main-page .carousel-control-next-icon {
+    background-color: transparent;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+}

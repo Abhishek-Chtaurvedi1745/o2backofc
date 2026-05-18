@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+.brand-logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.footer-wrap {
+  background: #F8FAFE;
+  font-family: 'Inter', sans-serif;
+  padding: 36px 48px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 48px;
+  padding-bottom: 28px;
+  align-items: start;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #f97316, #ff6b35);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.brand-name span { color: #f97316; }
+
+.brand-sub {
+  font-size: 10px;
+  color: #6b7280;
+  letter-spacing: 0.4px;
+}
+
+.brand-desc {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  max-width: 220px;
+}
+
+.col-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2F327D;
+  margin-bottom: 14px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.services-list li {
+  font-size: 14px;
+  color: #6b7280;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.arrow {
+  color: #f97316;
+  font-size: 12px;
+}
+
+.extra-note {
+  font-size: 12px;
+  color: #2F327D;
+  font-weight: 700;
+  margin-top: 6px;
+  text-align: left;
+  white-space: nowrap;
+  margin-left: -4px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12.5px;
+  color: #696984;
+  padding: 4px 0;
+}
+
+.contact-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.social-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.social-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sb-fb { background: #1877f2; color: #fff; }
+.sb-ig { background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af); color: #fff; }
+
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+@media (max-width: 900px) {
+  .footer-wrap {
+    padding: 32px 24px 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .brand-desc {
+    max-width: 100%;
+  }
+
+  .col-title {
+    font-size: 22px;
+  }
+
+  .extra-note {
+    white-space: normal;
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-wrap {
+    padding: 24px 16px 0;
+  }
+
+  .brand-logo-img {
+    height: 44px;
+  }
+
+  .col-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .services-list li {
+    font-size: 13px;
+  }
+
+  .contact-list li {
+    font-size: 12px;
+  }
+
+  .extra-note {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-wrap {
+    padding: 20px 12px 0;
+  }
+
+  .brand-logo-img {
+    height: 38px;
+  }
+
+  .col-title {
+    font-size: 16px;
+  }
+
+  .social-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+  }
+}
+.hq-text {
+  color: #696984 !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 0 !important;
+  font-weight: 600 !important;
+}

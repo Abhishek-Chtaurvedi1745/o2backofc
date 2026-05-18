@@ -1,0 +1,204 @@
+.div-servicesbanner {
+    width: 180px;
+    height: 184px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px 2px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 10px 8px;
+    text-align: center;
+    animation: rotate 5s infinite linear;
+  
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+   
+    50%{
+        transform: scale(0.9);
+     
+    }
+    100% {
+        transform: scale(1.01);
+        
+    }
+}
+
+.div-servicesbanner img{
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 10px;
+}
+.all-social-media-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px  1px rgba(154, 170, 207, 25%) ;
+    height:100x;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.all-social-media-div p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #635A5A;
+    transition: color 0.3s ease;
+
+}
+.all-social-media-div:hover,
+.all-social-media-div:hover h3,
+.all-social-media-div:hover p {
+    background-color: #FE5A0E;
+
+    color: white;
+}
+.all-tech-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px  1px rgba(154, 170, 207, 25%) ;
+    height: 300px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.all-tech-div h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #FE5A0E;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+.all-tech-div p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #635A5A;
+    transition: color 0.3s ease;
+  
+}
+.all-tech-div:hover,
+.all-tech-div:hover h3,
+.all-tech-div:hover p {
+    background-color: #FE5A0E;
+
+    color: white;
+}
+.all-services-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px  1px rgba(154, 170, 207, 25%) ;
+    height: 260px;
+    border-radius: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.all-services-div h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #061B49;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+.all-services-div p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #635A5A;
+    transition: color 0.3s ease;
+  
+}
+.all-services-div:hover,
+.all-services-div:hover h3,
+.all-services-div:hover p {
+    background-color: #061B49;
+
+    color: white;
+}
+.customer-div-list{
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.customer-div-list ul{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration:none;
+ 
+}
+.customer-div-list ul li{
+    list-style: none;
+    margin-top: 10px;
+
+
+}
+.wave-background {
+    position: relative;
+    width: auto;
+    height: auto;
+    background: linear-gradient(#fff 5%, #061B49 2%);
+    overflow: hidden;
+    border-top-left-radius: 5%;
+}
+.wave-background::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 2%;
+    width: 200%;
+    height: 30px;
+    background: rgba(6, 27, 73, 30%);
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: translateY(-10%);
+    z-index: 1000;
+}
+@media screen and (min-width:1400px) 
+{
+    .wave-background {
+        position: relative;
+        width: auto;
+        height: auto;
+        background: linear-gradient(#fff 5%, #061B49 2%);
+        overflow: hidden;
+        border-top-left-radius: 5%;
+    }
+    .wave-background::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 2%;
+        width: 200%;
+        height: 30px;
+        background: rgba(6, 27, 73, 30%);
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        transform: translateY(-10%);
+        z-index: 1000;
+    }
+    
+}

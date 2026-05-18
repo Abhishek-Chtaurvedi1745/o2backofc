@@ -1,0 +1,48 @@
+
+  [
+      {
+        "title": "Virtual Assistants",
+        "description": "Our team of dedicated virtual assistants is here to help you streamline your daily tasks, whether it's managing your calendar, handling email correspondence, or conducting research. With their support, you can boost productivity and ensure that no important detail goes unnoticed.",
+        "link": "virtualassitant"
+      },
+      {
+        "title": "HR and Recruitment",
+        "description": "Finding and retaining top talent is essential for business growth. Our comprehensive human resource and recruitment solutions cover every aspect, from sourcing and interviewing candidates to ensuring they seamlessly integrate into your team."
+      },
+      {
+        "title": "Customer Service",
+        "description": "Elevating customer satisfaction is our top priority. Our customer service team is committed to delivering the highest quality support. We are responsive, attentive, and focused on addressing every customer's needs promptly and professionally.",
+        "link":"customerservices"
+      },
+  
+      {
+        "title": "Accountants & Book keepeing",
+        "description": "Trust our certified accountants for precise financial management and reporting.",
+        "link": "accounts"
+        
+      },
+      {
+        "title": "Technical Support",
+        "description": "Technical issues can disrupt your business operations, and that's where our expert technicians step in. They are well-versed in troubleshooting and resolving technical challenges swiftly, ensuring your business continues to run smoothly without interruptions.",
+        "link":"techinal-support"
+      },
+      {
+        "title": "Admin & Data Entry",
+        "description": "Keeping your records organized and error-free is crucial. Our meticulous administrative and data entry services are designed to do just that, providing you with peace of mind and the ability to make informed decisions."
+      },
+      {
+        "title": "Sales Support",
+        "description": "Our targeted cold calling strategies are designed to open new doors and opportunities for your business. Our experts understand how to make the right connections and initiate meaningful conversations."
+      },
+      {
+        "title": "Social Media Management",
+        "description": "Elevating your online presence and managing your brand's reputation is the focus of our expert social media management team. We create and execute strategies to boost your visibility and engagement across various platforms."
+      },
+      { 
+        "title": "Call Centre outsourcing",
+
+       "description":  "Elevating your online presence and managing your brand's reputation is the focus of our expert social media management team. We create and execute strategies to boost your visibility and engagement across various platforms."
+    
+    }
+  ]
+  

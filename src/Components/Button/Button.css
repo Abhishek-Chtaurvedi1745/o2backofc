@@ -1,0 +1,40 @@
+.ac-sec-button-list {
+    display: inline-flex;
+}
+
+.ac-sec-button-list ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #EEEEEE 7%, #EEEEEE 70%, #FE5A0E 70%);
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 7px 15px;
+    cursor: pointer;
+    color: #151414;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ac-sec-button-list ul:hover {
+    list-style: none;
+    margin: 0;
+    background-image: linear-gradient(to right, #FE5A0E 7%, #FE5A0E 70%, #FE5A0E 70%);
+    color: #FFFF;
+
+}
+
+.ac-sec-button-list ul li:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ac-sec-button-list ul .arrow-icon {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    color: #FFFF;
+
+
+}

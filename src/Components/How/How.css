@@ -1,0 +1,179 @@
+.banner-container {
+  position: relative;
+}
+
+.banner-button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.under-page-button-banner {
+  background-color: #4da8b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.process-section {
+  background-color: #f8f8f8;
+}
+
+.custom-card {
+  position: relative;
+  border: 0;
+  box-shadow: 0 4px 8px rgba(154, 170, 207, 0.7);
+  background-color: white;
+  border-radius: 15px;
+  border-color: #ece6f4;
+  height: 364px;
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-right: 5px solid #4da8b4;
+  border-bottom: 5px solid #4da8b4;
+  margin-bottom: 30px;
+}
+
+.card-number {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  padding: 0;
+  margin: 10px;
+  background-color: #4da8b4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card-number h4 {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .custom-card {
+    height: 400px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .custom-card {
+    height: 450px;
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-card {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .card-number {
+    top: -5px;
+    left: -5px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-number h4 {
+    font-size: 30px;
+  }
+
+  .card-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 13px;
+  }
+}
+
+/* Specific adjustments for tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .custom-card {
+    height: 380px;
+    max-width: 45%;
+  }
+
+  .card-number {
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    left: -15px;
+  }
+
+  .card-number h4 {
+    font-size: 30px;
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 13px;
+  }
+}
+
+/* Adjustments for iPad Pro and similar large tablets */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .custom-card {
+    height: 400px;
+    max-width: 300px;
+  }
+}
