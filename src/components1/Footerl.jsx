@@ -1,5 +1,6 @@
 import "./Footer.css";
 import logo from "../assets/pdf/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -103,7 +104,10 @@ Australia:
       </div>
 
       <div className="footer-bottom">
-        <span>Privacy Policy &nbsp;|&nbsp; Term &amp; Service</span>
+        <span><Link to="/privacy-policy" className="footer-link
+                                           " >
+                                            Privacy-policy
+                                        </Link> &nbsp;|&nbsp; Term &amp; Service</span>
         <span>Trusted by Australian businesses for reliable outsourced support</span>
       </div>
     </footer>

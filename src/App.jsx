@@ -12,6 +12,8 @@ import seoData from '../seoData.json';
 import SeO from '../Seo';
 import CaseStudy from './Components/component/caseStudy/CaseStudy';
 import Landing from './Pages/Landing';
+import Contact1 from './Pages/Contact1';
+import Privacypolicy from './Pages/Privacypolicy';
 
 // Lazy loaded components
 const Home = React.lazy(() => import('./Components/Home/Home'));
@@ -36,9 +38,13 @@ function App() {
   const [currentSEO, setCurrentSEO] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
 
-  // LANDING PAGE CHECK
-  const isLandingPage =
-    pathname === '/lp/outsource2backoffice/australia/may2026/';
+  // LANDING PAGES
+  const landingPages = [
+    '/lp/outsource2backoffice/australia/may2026/',
+    '/lp/outsource2backoffice/australia/may2026/contact-us'
+  ];
+
+  const isLandingPage = landingPages.includes(pathname);
 
   // Performance monitoring
   usePerformanceMonitoring(pathname);
@@ -82,10 +88,11 @@ function App() {
 
     window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener(
-      'resize',
-      handleResize
-    );
+    return () =>
+      window.removeEventListener(
+        'resize',
+        handleResize
+      );
   }, []);
 
   // Preload components
@@ -108,6 +115,7 @@ function App() {
 
   return (
     <React.Fragment>
+
       {currentSEO && (
         <SeO
           title={currentSEO.title}
@@ -119,7 +127,7 @@ function App() {
 
       <ErrorBoundary>
 
-        {/* SHOW HEADER ONLY IF NOT LANDING PAGE */}
+        {/* HEADER */}
         {!isLandingPage && <Header />}
 
         <Container
@@ -134,13 +142,19 @@ function App() {
             flexDirection: 'column',
           }}
         >
+
           <ErrorBoundary>
+
             <Suspense fallback={<LoadingSpinner />}>
-              
+
               <div style={{ flex: 1 }}>
+
                 <Routes>
 
-                  <Route path="/" element={<Home />} />
+                  <Route
+                    path="/"
+                    element={<Home />}
+                  />
 
                   <Route
                     path="/ourservices"
@@ -193,22 +207,34 @@ function App() {
                     element={<Landing />}
                   />
 
+                  {/* CONTACT1 PAGE */}
+                  <Route
+                    path="/lp/outsource2backoffice/australia/may2026/contact-us"
+                    element={<Contact1 />}
+                  />
+
+                  {/* NOT FOUND */}
                   <Route
                     path="*"
                     element={<NotFound />}
                   />
+                  <Route path="/privacy-policy" element={<Privacypolicy />} />
 
                 </Routes>
+
               </div>
 
             </Suspense>
+
           </ErrorBoundary>
 
-          {/* SHOW FOOTER ONLY IF NOT LANDING PAGE */}
+          {/* FOOTER */}
           {!isLandingPage && <Footer />}
 
         </Container>
+
       </ErrorBoundary>
+
     </React.Fragment>
   );
 }

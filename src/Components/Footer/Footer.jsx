@@ -96,6 +96,7 @@ export default function Footer() {
                                    " >
                                     info@outsource2backoffice.com
                                 </a></span>
+                            
                             </p>
 
                         </Col>
@@ -123,7 +124,10 @@ export default function Footer() {
                 <Container>
                     <Row className="text-center text-sm-start justify-content-center">
                         <Col xs={12} sm={5} className="mb-2 mb-sm-0">
-                            <small>Privacy Policy & Terms & Conditions</small>
+                            <small><span> <Link to="/privacy-policy" className="footer-link
+                                   " >
+                                    Privacy-policy
+                                </Link></span> & Terms & Conditions</small>
                         </Col>
                         <Col xs={12} sm={5} className="text-sm-end">
                             <small>© COPYRIGHT 2023 Outsource2backoffice - ALL RIGHTS RESERVED</small>
