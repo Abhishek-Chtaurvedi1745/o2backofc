@@ -38,13 +38,18 @@ function App() {
   const [currentSEO, setCurrentSEO] = useState(null);
   const [headerHeight, setHeaderHeight] = useState(0);
 
-  // LANDING PAGES
+  // LANDING PAGES (normalize trailing slash so direct URLs match)
+  const normalizedPath =
+    pathname.length > 1 && pathname.endsWith('/')
+      ? pathname.slice(0, -1)
+      : pathname;
+
   const landingPages = [
-    '/lp/outsource2backoffice/australia/may2026/',
-    '/lp/outsource2backoffice/australia/may2026/contact-us'
+    '/lp/outsource2backoffice/australia/may2026',
+    '/lp/outsource2backoffice/australia/may2026/contact-us',
   ];
 
-  const isLandingPage = landingPages.includes(pathname);
+  const isLandingPage = landingPages.includes(normalizedPath);
 
   // Performance monitoring
   usePerformanceMonitoring(pathname);
@@ -52,7 +57,7 @@ function App() {
   // SEO + Scroll
   useEffect(() => {
     const matchingSEO = seoData.find(
-      (item) => item.path === pathname
+      (item) => item.path === normalizedPath || item.path === pathname
     );
 
     if (matchingSEO) {
@@ -70,7 +75,7 @@ function App() {
     }, 100);
 
     return () => clearTimeout(timeoutId);
-  }, [pathname]);
+  }, [pathname, normalizedPath]);
 
   // Header height
   useEffect(() => {
@@ -201,7 +206,11 @@ function App() {
                     element={<CaseStudy />}
                   />
 
-                  {/* LANDING PAGE */}
+                  {/* LANDING PAGE (both slash variants for direct URLs) */}
+                  <Route
+                    path="/lp/outsource2backoffice/australia/may2026"
+                    element={<Landing />}
+                  />
                   <Route
                     path="/lp/outsource2backoffice/australia/may2026/"
                     element={<Landing />}
@@ -210,6 +219,10 @@ function App() {
                   {/* CONTACT1 PAGE */}
                   <Route
                     path="/lp/outsource2backoffice/australia/may2026/contact-us"
+                    element={<Contact1 />}
+                  />
+                  <Route
+                    path="/lp/outsource2backoffice/australia/may2026/contact-us/"
                     element={<Contact1 />}
                   />
 
