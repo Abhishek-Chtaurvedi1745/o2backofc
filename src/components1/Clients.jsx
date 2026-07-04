@@ -4,23 +4,23 @@ import eight from "../assets/pdf/Group465.png";
 import abn from "../assets/pdf/Group464.png";
 import paloalto from "../assets/pdf/Group463.png";
 import brit from "../assets/pdf/Group462.png";
-import farm from "../assets/pdf/Group467.png";
-import spotify from "../assets/pdf/Group46.png";
-import amd from "../assets/pdf/Group44.png";
-import mercedes from "../assets/pdf/Group464 (1).png";
-import pvh from "../assets/pdf/p1-45-185x104.jpeg";
+import jellisCraig from "../../public/Image/clients/jellis-craig.png";
+import moneyQuest from "../../public/Image/clients/moneyquest.png";
+import asanka from "../../public/Image/clients/asanka-buyers-agent.png";
+import bondCleaning from "../../public/Image/clients/bond-cleaning-services.png";
+import zentis from "../../public/Image/clients/zentis-commercial-cleaning.png";
 
 const clientList = [
+  { label: "Jellis Craig", img: jellisCraig },
+  { label: "MoneyQuest", img: moneyQuest },
+  { label: "Asanka Buyers Agent", img: asanka },
+  { label: "Bond Cleaning Services", img: bondCleaning },
+  { label: "Zentis Commercial Cleaning", img: zentis },
   { label: "LexisNexis", img: lexis },
   { label: "8x8", img: eight },
   { label: "ABN AMRO", img: abn },
   { label: "paloalto", img: paloalto },
   { label: "BRIT", img: brit },
-  { label: "Farm Credit Bank of Texas", img: farm },
-  { label: "Spotify", img: spotify },
-  { label: "AMD", img: amd },
-  { label: "Mercedes pay", img: mercedes },
-  { label: "PVH", img: pvh },
 ];
 
 export default function Clients() {

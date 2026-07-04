@@ -69,19 +69,19 @@ export default function SectionFirst() {
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover"
                 }}>
-                    <Col xs={11} md={5} lg={6} >
-                        <h1 className="hed1 text-white mt-md-0 mt-3 ">Take Control of Your Time</h1>
-                        <p className="text-white para">
+                    <Col xs={11} md={5} lg={6} className="time-control-content">
+                        <h1 className="hed1 text-white mt-md-0 mt-3">Take Control of Your Time</h1>
+                        <p className="text-white para time-control-para">
                             Time is your most valuable asset in today's fast-paced business world. Recognizing this, we offer strategic outsourcing solutions designed to help you reclaim control of your schedule. By delegating time-consuming tasks to our dedicated virtual staff, you can redirect your focus towards what truly matters – nurturing the growth and success of your business.
                         </p>
-                        <div className="d-md-flex d-none flex-wrap text-white para pt-3">
+                        <div className="time-control-features">
                             {bulletpoints.map((item, id) => (
-                                <ul key={id} className="col-lg-6 col-sm-10 col-xs-12 cursor-pointer">
-                                    <li className="d-flex lg:gap-2 gap-1 align-items-center py-1 ps-xl-3 ps-lg-2 ps-2 rounded list" 
-                                    style={{ color: "#474747", backgroundColor: "#fff" }}>
-                                        <FaCheck /> {item}
-                                    </li>
-                                </ul>
+                                <div key={id} className="time-control-feature para">
+                                    <span className="time-control-check" aria-hidden="true">
+                                        <FaCheck />
+                                    </span>
+                                    <span>{item}</span>
+                                </div>
                             ))}
                         </div>
                     </Col>
